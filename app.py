@@ -6,13 +6,13 @@ from PIL import Image
 
 st.set_page_config(page_title="AI Media Detector", page_icon="🤖", layout="centered")
 
-st.title("🤖 AI Media Detector")
+st.title("AI Media Detector")
 st.write("Unggah foto di bawah ini untuk mendeteksi apakah gambar tersebut **Real (Asli)** atau **AI Generated (Buatan AI)**.")
 
 @st.cache_resource
 def load_model():
     MODEL_PATH = "ai_detector_model.pth"
-    CLASS_NAMES = ['ai_generated', 'real']
+    CLASS_NAMES = ['real', 'ai_generated']
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
