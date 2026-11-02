@@ -1,4 +1,16 @@
+# Virtual Environment
 venv/
-__pycache__/
-.DS_Store
+.venv/
+
+# Dataset & Frame Mentah (terlalu besar untuk GitHub)
 dataset_processed/
+dataset_video/
+frames_mentah/
+test_input/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# IDE Configuration
+.vscode/
