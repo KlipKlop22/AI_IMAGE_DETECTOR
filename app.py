@@ -12,7 +12,8 @@ st.write("Unggah foto di bawah ini untuk mendeteksi apakah gambar tersebut **Rea
 @st.cache_resource
 def load_model():
     MODEL_PATH = "ai_detector_model.pth"
-    CLASS_NAMES = ['real', 'ai_generated']
+    # Disesuaikan dengan urutan ImageFolder PyTorch: Index 0 = ai_generated, Index 1 = real
+    CLASS_NAMES = ['ai_generated', 'real']
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     

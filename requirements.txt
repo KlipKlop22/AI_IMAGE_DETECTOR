@@ -2,3 +2,5 @@ torch
 torchvision
 pillow
 streamlit
+opencv-python
+numpy
