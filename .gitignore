@@ -3,9 +3,9 @@ venv/
 .venv/
 
 # Dataset & Frame Mentah (terlalu besar untuk GitHub)
-dataset_processed/
+
 dataset_video/
-frames_mentah/
+
 test_input/
 
 # Python Cache
